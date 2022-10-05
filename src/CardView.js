@@ -104,7 +104,7 @@ export default class CardView extends Component {
     },
 
     scale: 1,
-    fontFamily: Platform.select({ ios: "Courier", android: "monospace" }),
+    fontFamily: Platform.select({ android: "monospace" }),
     imageFront: require("../images/card-front.png"),
     imageBack: require("../images/card-back.png"),
   };
@@ -185,7 +185,7 @@ export default class CardView extends Component {
                 focused === "expiry" && s.focused,
               ]}
             >
-              MÊS/ANO
+              MÊS / ANO
             </Text>
             <Text
               style={[
